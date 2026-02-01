@@ -1,0 +1,106 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 137vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.container{
+    background-color: rgb(248, 168, 168);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 600px;
+}
+
+h1{
+    font-size: 3.1rem;
+    font-weight: semi-bold;
+    color:rgb(211, 108, 139);
+    text-align: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+input[type='text']{
+    width: 67%;
+    padding: 14px;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type='text']:focus{
+    border-color: darkblue;
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.3);
+}
+
+button{
+    padding: 14px 25px;
+    font-size: 1.5rem;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: rgb(2, 2, 64);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 1.5rem;
+}
+
+li button {
+    background-color: transparent;
+    color:blanchedalmond;
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+li button:hover{
+    color: aliceblue;
+}
+
+li .remove-btn{
+    background-color: rgb(82, 3, 3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+li .remove-btn:hover {
+    background-color: rgb(218, 11, 11);
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #6c756c;
+}
